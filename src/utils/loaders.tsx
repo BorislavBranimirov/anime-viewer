@@ -14,6 +14,7 @@ export const fetchTopAnime = async (page?: string | null) => {
 export const fetchSeasonalAnime = async (page?: string | null) => {
   const url = new URL('https://api.jikan.moe/v4/seasons/now');
   url.searchParams.append('limit', '20');
+  url.searchParams.append('sfw', 'true');
   if (page) {
     url.searchParams.append('page', page);
   }
