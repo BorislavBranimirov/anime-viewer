@@ -52,7 +52,7 @@ const router = createBrowserRouter([
             },
           },
           {
-            path: '/animes/:id',
+            path: '/anime/:id',
             element: <AnimePage />,
             loader: async ({ params }) => fetchAnime(params.id || '1'),
           },
