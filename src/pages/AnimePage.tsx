@@ -7,7 +7,7 @@ const AnimePage = () => {
   const anime = useLoaderData() as IApiAnime;
 
   return (
-    <div className="w-4/5 max-w-screen-2xl md:h-[90vh] mx-auto my-10 md:my-0 flex justify-center items-center">
+    <div className="w-[90%] md:w-4/5 max-w-screen-2xl md:h-[90vh] mx-auto my-10 md:my-0 flex justify-center items-center">
       <div className="w-full md:h-[70vh] rounded-lg overflow-hidden flex flex-col md:flex-row shadow-lg outline outline-2 outline-violet-900">
         <div className="relative h-full w-auto shrink-0">
           <img
@@ -53,10 +53,12 @@ const AnimePage = () => {
             )}
           </div>
           {!!anime.synopsis && (
-            <p className="break-words overflow-auto">{anime.synopsis}</p>
+            <p className="whitespace-pre-wrap break-words overflow-auto md:pr-3">
+              {anime.synopsis}
+            </p>
           )}
           <p>
-            <span className="mr-2 font-bold">Studios:</span>
+            <span className="font-bold">Studios: </span>
             {anime.studios.map((studio) => studio.name).join(', ')}
           </p>
           <div className="flex gap-3 flex-wrap">

@@ -25,7 +25,7 @@ const Viewer = () => {
 
   return (
     <>
-      {animeList.length == 0 ? (
+      {animeList.length === 0 ? (
         <p className="font-bold text-lg text-center">No entries found&#8230;</p>
       ) : (
         <div className="mb-16 grid auto-rows-fr grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-16">
