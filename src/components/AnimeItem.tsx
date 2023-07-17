@@ -6,7 +6,7 @@ const AnimeItem = ({ anime }: { anime: IApiAnime }) => {
   return (
     <div className="relative max-h-[75vh] group">
       <Link to={`/anime/${anime.mal_id}`}>
-        <div className="h-full pb-6 rounded-lg overflow-hidden bg-gradient-to-b from-gray-800 from-70% to-purple-950/40 shadow-md transition-all outline outline-1 outline-purple-950/30 group-hover:outline-2 group-hover:outline-violet-900">
+        <div className="h-full pb-6 rounded-lg overflow-hidden bg-gradient-to-b from-zinc-950/20 from-80% to-purple-950/20 shadow-md transition-all outline outline-1 outline-violet-900/50 group-hover:outline-2 group-hover:outline-violet-900">
           <div className="relative w-full h-3/4 overflow-hidden">
             <img
               src={anime.images.webp.large_image_url}

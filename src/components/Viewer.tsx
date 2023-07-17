@@ -36,7 +36,7 @@ const Viewer = () => {
       )}
       <div className="flex justify-between my-5">
         <button
-          className="py-2 px-5 rounded-lg bg-purple-900 transition-colors hover:bg-purple-700/70 active:bg-purple-700/50 disabled:bg-purple-900/50"
+          className="py-2 px-5 rounded-lg bg-violet-900 transition-colors hover:bg-violet-700/70 active:bg-violet-700/50 disabled:bg-violet-900/50"
           disabled={!(current_page > 1)}
           onClick={() => {
             if (current_page > 1) {
@@ -50,7 +50,7 @@ const Viewer = () => {
           Previous
         </button>
         <button
-          className="py-2 px-5 rounded-lg bg-purple-900 transition-colors hover:bg-purple-700/70 active:bg-purple-700/50 disabled:bg-purple-900/50"
+          className="py-2 px-5 rounded-lg bg-violet-900 transition-colors hover:bg-violet-700/70 active:bg-violet-700/50 disabled:bg-violet-900/50"
           disabled={!has_next_page}
           onClick={() => {
             if (has_next_page) {

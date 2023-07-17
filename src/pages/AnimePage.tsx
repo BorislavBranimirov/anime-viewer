@@ -66,7 +66,7 @@ const AnimePage = () => {
               return (
                 <span
                   key={genre.mal_id}
-                  className="px-2 py-1.5 bg-purple-900 rounded-xl text-sm"
+                  className="px-2 py-1.5 bg-violet-900 rounded-xl text-sm"
                 >
                   {genre.name}
                 </span>

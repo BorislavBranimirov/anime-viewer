@@ -27,7 +27,7 @@ const SearchAnimePage = () => {
         />
         <button
           type="submit"
-          className="py-2 px-5 rounded-lg bg-purple-900 transition-colors hover:bg-purple-700/70 active:bg-purple-700/50 shrink-0"
+          className="py-2 px-5 rounded-lg bg-violet-900 transition-colors hover:bg-violet-700/70 active:bg-violet-700/50 shrink-0"
         >
           Search
         </button>
