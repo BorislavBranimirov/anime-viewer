@@ -4,10 +4,10 @@ import { IApiAnime } from '../utils/types';
 
 const AnimeItem = ({ anime }: { anime: IApiAnime }) => {
   return (
-    <div className="relative max-h-[75vh] group">
+    <div className="relative group">
       <Link to={`/anime/${anime.mal_id}`}>
         <div className="h-full pb-6 rounded-lg overflow-hidden bg-gradient-to-b from-zinc-950/20 from-80% to-purple-950/20 shadow-md transition-all outline outline-1 outline-violet-900/50 group-hover:outline-2 group-hover:outline-violet-900">
-          <div className="relative w-full h-3/4 overflow-hidden">
+          <div className="relative w-full h-[400px] overflow-hidden">
             <img
               src={anime.images.webp.large_image_url}
               alt="Anime image"
@@ -19,8 +19,8 @@ const AnimeItem = ({ anime }: { anime: IApiAnime }) => {
               </div>
             )}
           </div>
-          <div className="h-1/4 flex flex-col p-3 justify-between">
-            <p className="text-lg font-bold break-words overflow-auto">
+          <div className="h-[133px] flex flex-col p-3 justify-between">
+            <p className="text-lg font-bold break-words overflow-hidden">
               {anime.title}
             </p>
             <p className="flex items-center justify-center gap-1">
